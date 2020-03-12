@@ -1,13 +1,25 @@
 <!-- FOOTER -->
 <footer>
-      <div class="container">
-        <div class="row">
-
-          
-
-        </div>
-      </div>
-    </footer>
+  <nav class="footer-navbar">
+    <ul class="navbar-wrapper">
+        <li class="nav-item active">
+          <a href="#">Publicité</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Mentions légales</a>
+        </li>
+        <li class="nav-item">
+          <a  href="#">Politique de confidentialité</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Cookie</a>
+        </li>
+      </ul>
+  </nav>
+  <div class="copyright-wrapper">
+    <p class="copyright">© Copyright 2020 - Tous droits réservés LaMifa & Déborah</p>
+  </div>
+</footer>
 
     
 
