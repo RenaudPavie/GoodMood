@@ -1,0 +1,98 @@
+:root {
+    --c1:#05386B;
+    --c2:#379683;
+    --c3:#00D880;
+    --c4:#5CDB95;
+    --c5:#001628;
+    --c6:#D7FFE7;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+}
+
+
+
+/* Bandeau Top */
+.topHeadband {
+    background-color:var(--c5);
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:0 15px;
+}
+.topHeadband p {
+    margin-bottom: 0;
+    color: var(--c4);
+    font-size: 0.8rem;
+}
+.rsxSociaux {
+    display: flex;
+    align-items: center;
+}
+.rsxSociaux img {
+    width: 20px;
+    margin-left: 15px;
+}
+.rsxSociaux p {
+    margin-right: 15px;
+}
+
+/* Nav menu */
+.navMenu {
+    border-bottom:1px solid black;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding:0 15px;
+}
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-right: 30px;
+}
+.navLink {
+    /* width: 45%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navLink a {
+    margin-right: 30px;
+    color:var(--c5);
+    font-weight: 600;
+}
+.navLink a:hover {
+    text-decoration: none;
+}
+#openMenu {
+    display: none;
+}
+/* Burger/Sidebar à < 600px */
+@media screen and (max-width:600px) {
+    #openMenu {
+        display: block;
+    }
+    .navLink {
+        background: red;
+        height: 100vh;
+        width: 150px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding:30px 15px;
+    }
+    .navLink a {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
