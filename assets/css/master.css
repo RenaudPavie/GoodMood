@@ -159,3 +159,59 @@ body {
     font-size: 16px;
     min-height: 100vh;
 }
+
+/* PAGE ACTUALITES */
+.article {
+    max-width: calc(100% / 3 - 20px);
+    background: #F3FFF8;
+    padding: 1rem;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.article .category {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    background: #05386B;
+    padding: 5px;
+    color: #F3FFF8;
+    text-transform: uppercase;
+}
+
+.article h3 {
+    font-size: 1.2rem;
+    color: #379683;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.article h3::after {
+    content: "";
+    background: #05386B;
+    width: 150px;
+    height: 3px;
+    display: block;
+    margin: 10px 0;
+}
+
+.article p {
+    color: #379683;
+    font-size: 1rem;
+}
+
+.article .know-more {
+    width: 100%;
+    border-bottom: 2px solid #05386B;
+}
+
+.article .know-more p {
+    text-align: right;
+    font-size: 12px;
+    margin: 0;
+}
+
+.article .thumbnail {
+    overflow: hidden;
+    height: 150px;
+}
