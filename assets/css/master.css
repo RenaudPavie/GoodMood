@@ -44,7 +44,6 @@ body {
 
 /* Nav menu */
 .navMenu {
-    border-bottom: 1px solid black;
     width: 100%;
     height: 90px;
     display: flex;
@@ -75,12 +74,18 @@ body {
     text-decoration: none;
 }
 
-#openMenu {
+#openMenu,#closeMenu {
     display: none;
 }
 
 /* Burger/Sidebar à < 600px */
 @media screen and (max-width:600px) {
+    .topHeadband > p {
+        display: none;
+    }
+    .rsxSociaux {
+        margin:auto;
+    }
     #openMenu,#closeMenu {
         display: block;
         border: none;
