@@ -100,6 +100,11 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    footer ul.navbar-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /*FOOTER*/
@@ -152,4 +157,5 @@ footer .copyright-wrapper .copyright {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    min-height: 100vh;
 }

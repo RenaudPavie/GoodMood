@@ -83,24 +83,8 @@ add_theme_support( 'wp-block-styles' );
 add_theme_support( 'responsive-embeds' );
 
 // logo
-add_theme_support( 'custom-logo', array(
-    'height' => 480,
-    'width'  => 720,
-    'flex-width' => true,
-    'flex-height' => true,
-) );
-
-function goodmood_default_menu() {
-
-	$html = '<ul id="acme-default-menu">';
-		$html .= '<li class="menu-item menu-item-type-post_type menu-item-object-page">';
-			$html .= '<a href="' . esc_url( home_url() ) . '" title="' . __( 'Home', 'acme' ) . '">';
-				$html .= __( 'Home', 'acme' );
-			$html .= '</a>';
-		$html .= '</li>';
-	$html .= '</ul>';
-
-	echo $html;
-
-} 
+add_image_size('mytheme-logo', 160, 90);
+add_theme_support('custom-logo', array(
+    'size' => 'mytheme-logo'
+));
 ?>
