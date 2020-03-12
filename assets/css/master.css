@@ -6,7 +6,10 @@
     --c5: #001628;
     --c6: #D7FFE7;
 }
-
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
 /* Bandeau Top */
 .topHeadband {
     background-color: var(--c5);
@@ -78,32 +81,55 @@
 
 /* Burger/Sidebar à < 600px */
 @media screen and (max-width:600px) {
-    #openMenu {
+    #openMenu,#closeMenu {
         display: block;
+        border: none;
+        background: inherit;
+    }    
+    #openMenu img,#closeMenu img {
+        width: 30px;
+        height: 30px;
     }
-
+    .navMenu {
+        justify-content: space-between;
+    }
     .navLink {
-        background: red;
-        height: 100vh;
-        width: 150px;
+        display: none;
+        background-color: #fff;
+        border-bottom: 2px solid var(--c1);
+        height: 40vh;
+        width: 100%;
         position: absolute;
         right: 0;
-        top: 0;
+        top: -60vh;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         justify-content: flex-start;
         padding: 30px 15px;
+        z-index: 1;
+        transition: all 0.5s ease-in;
+    }    
+    
+    .navLink.show {
+        top: 30px;
+        transition: all 0.5s ease-in;
     }
 
     .navLink a {
+        text-transform: uppercase;
         margin-right: 0;
         margin-bottom: 20px;
     }
-
-    footer ul.navbar-wrapper {
-        flex-direction: column;
-        align-items: center;
+    .logoSidebar img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    #closeMenu {
+        position: absolute;
+        right: 15px;
+        top: 35px;
     }
 }
 
@@ -154,8 +180,3 @@ footer .copyright-wrapper .copyright {
     font-size: 12px;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    min-height: 100vh;
-}

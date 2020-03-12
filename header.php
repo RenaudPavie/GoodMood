@@ -37,7 +37,12 @@
               <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/logo.svg" alt="Logo GoodMood">
           </a>
           <div class="navLink">
-            
+            <a href="#" class="logoSidebar">
+                <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/logo.svg" alt="Logo GoodMood">
+            </a>
+            <button type="button" id="closeMenu">
+              <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/menu.svg" alt="Logo GoodMood">
+            </button>
             <a href="#">Actualités</a>
             <a href="#">Evenements</a>
             <a href="#">Contact</a>
