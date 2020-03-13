@@ -20,12 +20,8 @@
                   <!-- <p>Publié le <?php the_date() ?> par <?php the_author() ?></p> -->
 
                   <!-- On affiche les taxonomies gràce à la fonction the_terms() -->
-                  <a href="#">VENDREDI 17 JANVIER 2020</a> - <a href="#">20h00</a> <br>
-                  <!-- <?php the_terms( $post->ID, 'dates', '' );?> -  -->
-                  <!-- <?php the_terms( $post->ID, 'heures', '' ); ?><br> -->
-
-                  <a href="#">106 - Grande Salle</a>
-                  <!-- <?php the_terms( $post->ID, 'lieux', '' ); ?> <br> -->
+                  <p><?php echo strip_tags(get_the_term_list( $post->ID, 'dates', ' ', ', ')); ?> - <?php echo strip_tags(get_the_term_list( $post->ID, 'heures', ' ', ', ')); ?></p>
+                  <p><?php echo strip_tags(get_the_term_list( $post->ID, 'lieux', ' ', ', ')); ?></p>
 
                 </div>
               </div>

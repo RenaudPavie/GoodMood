@@ -423,18 +423,15 @@ footer .copyright-wrapper .copyright {
     text-align: center;
 }
 
-.eventInfo a {
-    text-decoration: none;
+.eventInfo p {
+    text-transform: uppercase;
     color: var(--c2);
+    margin: 0;
 }
 
-.eventInfo a:last-of-type {
+.eventInfo p:last-of-type {
     display: block;
-    margin-top: 15px;
-}
-
-.eventInfo a:hover {
-    text-decoration: none;
+    margin-top: 8px;
 }
 
 .eventDescription p {
