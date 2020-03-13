@@ -2,11 +2,11 @@
 /* Template Name: Actualités */ 
 get_header(); ?>
 
-<div class="page">
+<div class="page container">
     <!-- Banner -->
     <div class="banner">
         <div class="banner__content">
-            <h1> <?php wp_title() ?> </h1>
+            <h1 class="mainTitlePerPage"> <?php wp_title("", true, "") ?> </h1>
         </div>
     </div>
     <div class="bloc-actus">
@@ -31,6 +31,10 @@ get_header(); ?>
                 </div>
             </div>
             <?php endforeach; ?>
-
     </div>
 </div>
+<style>
+.mainTitlePerPage::before {
+    content:'<?php wp_title("", true, ""); ?>';
+}
+</style>
