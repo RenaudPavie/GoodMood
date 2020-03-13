@@ -22,12 +22,12 @@
     );
 
     // The Query
-    $services = new WP_Query( $args );
+    $evenements = new WP_Query( $args );
 
     // The Loop
-    if ( $services->have_posts() ) {
-      while ( $services->have_posts() ) {
-        $services->the_post();
+    if ( $evenements->have_posts() ) {
+      while ( $evenements->have_posts() ) {
+        $evenements->the_post();
         ?>
           <div class="col-12 col-md-6 col-lg-4 eventBox">
             <?php the_post_thumbnail() ?>

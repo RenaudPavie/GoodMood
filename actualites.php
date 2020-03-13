@@ -32,25 +32,6 @@ get_header(); ?>
             </div>
             <?php endforeach; ?>
     </div>
-
-    <div>
-        <?php 
-
-            $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-
-            $args = array (
-                'post_type' => 'post',
-                'posts_per_page' => 10,
-                'paged' => $paged
-            );
-
-            $my_query = new WP_Query($args);
-
-            if($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post();
-
-
-        ?>
-    </div>
 </div>
 <style>
 .mainTitlePerPage::before {

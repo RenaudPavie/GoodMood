@@ -33,7 +33,7 @@
           </div>
         </div>
         <nav class="navMenu">
-          <a href="#" class="logo">
+          <a href="<?php bloginfo('url') ?>" class="logo">
               <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/logo.svg" alt="Logo GoodMood">
           </a>
           <div class="navLink">
@@ -43,8 +43,8 @@
             <button type="button" id="closeMenu">
               <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/menu.svg" alt="Logo GoodMood">
             </button>
-            <a href="#">Actualités</a>
-            <a href="#">Evenements</a>
+            <a href="<?php bloginfo('url') ?>/actualites">Actualités</a>
+            <a href="<?php bloginfo('url') ?>/tous-les-evenements/">Evenements</a>
             <a href="#">Contact</a>
           </div>
           <button type="button" id="openMenu">

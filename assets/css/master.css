@@ -373,4 +373,5 @@ footer .copyright-wrapper .copyright {
 .bgEventBeforeFooter img {
     width: 100%;
     height: auto;
+    opacity: 0.5;
 }
