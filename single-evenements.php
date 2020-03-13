@@ -38,6 +38,17 @@
             </div>
 
           </div>
+          <div class="shareRsx">
+            <p>Partager sur</p>
+            <div class="ico">
+              <a href="https://www.facebook.com/">
+                <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/facebookBis.svg" alt="Icone réseau Facebook">
+              </a>
+              <a href="https://www.twitter.com/">
+                <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/twitter2.svg" alt="Icone réseau Twitter">
+              </a>
+            </div>
+          </div>	
         </div>
 
       </div>

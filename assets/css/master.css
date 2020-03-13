@@ -389,7 +389,7 @@ footer .copyright-wrapper .copyright {
 
 /* SINGLE PAGE EVENT */
 .singleEventContent {
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
 }
 
 .eventImg img {
@@ -583,4 +583,28 @@ footer .copyright-wrapper .copyright {
 }
 #btnSubmitContact:focus {
     outline:none;
+}
+.shareRsx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+.shareRsx p {
+    color:var(--c2);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.ico {
+    display: flex;
+    justify-content: center;
+}
+.shareRsx .ico img {
+    width: 30px;
+    height: 30px;
+}
+.shareRsx .ico a:first-of-type {
+    margin-right: 15px;
 }
