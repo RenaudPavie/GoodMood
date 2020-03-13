@@ -45,7 +45,7 @@
             </button>
             <a href="<?php bloginfo('url') ?>/actualites">Actualités</a>
             <a href="<?php bloginfo('url') ?>/tous-les-evenements/">Evenements</a>
-            <a href="#">Contact</a>
+            <a href="<?php bloginfo('url') ?>/contact/">Contact</a>
           </div>
           <button type="button" id="openMenu">
             <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/menu.svg" alt="Logo GoodMood">
