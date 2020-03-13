@@ -18,14 +18,16 @@ get_header(); ?>
                 $postslist = get_posts( $args );
                 foreach ($postslist as $post) :  setup_postdata($post); ?>
             <div class="article">
-                <p class="category" style="pointer-events: none !important;"><?php the_category($separator = ", "); ?></p>
-                <h3><?php the_title(); ?></h3>
-                <p><?php the_excerpt(); ?></p>
-                <div class="know-more">
-                <a href="<?php the_permalink() ?>"><p>EN SAVOIR PLUS</p></a>
+                <div>
+                    <p class="category" style="pointer-events: none !important;"><?php the_category($separator = ", "); ?></p>
+                    <h3><?php the_title(); ?></h3>
+                    <p><?php the_excerpt(); ?></p>
+                    <div class="know-more">
+                        <a href="<?php the_permalink() ?>"><p>EN SAVOIR PLUS</p></a>
+                    </div>
                 </div>
                 <div class="thumbnail">
-                    <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/photo.jpg" alt="">
+                    <?php the_post_thumbnail() ?>
                 </div>
             </div>
             <?php endforeach; ?>
