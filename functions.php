@@ -87,4 +87,54 @@ add_image_size('mytheme-logo', 160, 90);
 add_theme_support('custom-logo', array(
     'size' => 'mytheme-logo'
 ));
+
+//CPT 
+function create_custom_post_type() {
+ 
+    // On rentre les différentes dénominations de notre custom post type qui seront affichées dans l'administration
+    $labels = array(
+        // Le nom au pluriel
+        'name'                => _x( 'Évènements', 'Post Type General Name'),
+        // Le nom au singulier
+        'singular_name'       => _x( 'Évènement', 'Post Type Singular Name'),
+        // Le libellé affiché dans le menu
+        'menu_name'           => __( 'Évènements'),
+        // Les différents libellés de l'administration
+        'all_items'           => __( 'Toutes les Évènements'),
+        'view_item'           => __( 'Voir l\'évènement'),
+        'add_new_item'        => __( 'Ajouter un évènement'),
+        'add_new'             => __( 'Ajouter'),
+        'edit_item'           => __( 'Editer un évènement'),
+        'update_item'         => __( 'Modifier l\'évènement'),
+        'search_items'        => __( 'Rechercher un évènement'),
+        'not_found'           => __( 'Non trouvé'),
+        'not_found_in_trash'  => __( 'Non trouvé dans la corbeille'),
+    );
+   
+    // On peut définir ici d'autres options pour notre custom post type
+   
+    $args = array(
+        'label'               => __( 'Évènements'),
+        'description'         => __( 'Tous les Évènements'),
+        'labels'              => $labels,
+        // On définit les options disponibles dans l'éditeur de notre custom post type ( un titre, un auteur...)
+        'supports'            => array( 'title', 'thumbnail'),
+        /*
+        * Différentes options supplémentaires
+        */
+        'show_in_rest'        => true,
+        'hierarchical'        => false,
+        'public'              => true,
+        'has_archive'         => true,
+        'rewrite'             => array( 'slug' => 'évènement'),
+ 
+    );
+   
+    // On enregistre notre custom post type qu'on nomme ici "serietv" et ses arguments
+    register_post_type( 'évènement', $args );
+ 
+}
+ 
+add_action( 'init', 'create_custom_post_type', 0 );
+?>
 ?>
