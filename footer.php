@@ -18,6 +18,7 @@
       </nav>
       <div class="copyright-wrapper">
         <p class="copyright">© Copyright 2020 - Tous droits réservés LaMifa & Déborah</p>
+        <p class="copyright"><?php echo get_option('bonheur_option_name'); ?></p>
       </div>
     </footer>
 
