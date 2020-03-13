@@ -15,15 +15,19 @@
                 <div class="col-6 eventImg">
                 <?php the_post_thumbnail() ?>          
                 </div>
-                <div class="col-6">
-                  <h1><?php the_title() ?></h1>
+                <div class="col-6 eventInfo">
+                  <h1 class="singleEventTitle"><?php the_title() ?></h1>
                   <!-- <p>Publié le <?php the_date() ?> par <?php the_author() ?></p> -->
 
 
                   <!-- On affiche les taxonomies gràce à la fonction the_terms() -->
-                <?php the_terms( $post->ID, 'lieux', 'Lieu : ' ); ?> <br>
-                <?php the_terms( $post->ID, 'dates', 'Date : ' );?> <br>
-                <?php the_terms( $post->ID, 'heures', 'Heure : ' ); ?><br>
+                  <a href="#">VENDREDI 17 JANVIER 2020</a> - <a href="#">20h00</a> <br>
+                  <!-- <?php the_terms( $post->ID, 'dates', '' );?> -  -->
+                  <!-- <?php the_terms( $post->ID, 'heures', '' ); ?><br> -->
+
+                  <a href="#">106 - Grande Salle</a>
+                  <!-- <?php the_terms( $post->ID, 'lieux', '' ); ?> <br> -->
+
                 </div>
               </div>
             </div>
@@ -34,7 +38,7 @@
         <div class="container-page container">
           <div class="row">
 
-            <div class="col-12">
+            <div class="col-12 eventDescription">
             <?php the_content() ?>
             </div>
 

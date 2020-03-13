@@ -385,3 +385,47 @@ footer .copyright-wrapper .copyright {
     height: auto;
     opacity: 0.5;
 }
+
+/* SINGLE PAGE EVENT */
+.singleEventContent {
+    padding:50px 0;
+}
+.eventImg img {
+    width: 100%;
+    height: auto;
+}
+.eventBanniere {
+    padding:0;
+    width: 100%;
+    position: relative;
+}
+.eventBanniere img{
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+.banner.singleEvent {
+    margin-bottom: 30px;
+}
+.singleEventTitle {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.eventInfo {
+    text-align: center;
+}
+.eventInfo a {
+    text-decoration: none;
+    color:var(--c2);
+}
+.eventInfo a:last-of-type {
+    display: block;
+    margin-top: 15px;
+}
+.eventInfo a:hover {
+   text-decoration: none;
+}
+.eventDescription p {
+    font-size: 1.2rem;
+}
