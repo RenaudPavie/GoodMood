@@ -483,3 +483,50 @@ footer .copyright-wrapper .copyright {
 .event-section .eventWrapper .eventBox p {
     color: var(--c1);
 }
+
+
+/* SINGLE ARTICLE */
+.single-thumbnail {
+    height: 20vh;
+    overflow: hidden;
+}
+
+.single-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.single h1 {
+    font-size: 2.2rem;
+    color: var(--c2);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+
+.single h1::after {
+    content: "";
+    background: var(--c1);
+    width: 150px;
+    height: 3px;
+    display: block;
+    margin: 10px 0;
+}
+
+.single.container {
+    background: var(--c6);
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.single.container p {
+    color: var(--c2);
+}
+
+.single.container a {
+    color: var(--c1);
+}
+
+.single.container figure.wp-block-image {
+    text-align: center;
+}
