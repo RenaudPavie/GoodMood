@@ -42,17 +42,16 @@
         <?php 
             // WP_Query arguments
             $args = array (
-            'post_type'              => array( 'evenements' ),
-            'post_status'            => array( 'publish' ),
-            'nopaging'               => true,
-            'order'                  => 'ASC',
-            'orderby'                => 'menu_order',
+                'post_type' => 'evenements',
+                'posts_per_page' => 3
             );
 
             // The Query
             $evenements = new WP_Query( $args );
+           
 
             // The Loop
+            query_posts('posts_per_page=2');
             if ( $evenements->have_posts() ) {
                 while ( $evenements->have_posts() ) {
                     $evenements->the_post();
@@ -89,8 +88,9 @@
             $recentPosts = new WP_Query();
             $recentPosts->query('showposts=5');
         ?>
-        <?php $args = array( 'numberposts' => 5, 'order'=> 'ASC', 'orderby' => 'title' );
+        <?php $args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
             $postslist = get_posts( $args );
+            
             foreach ($postslist as $post) :  setup_postdata($post); ?>
             <div class="article">
                 <div>
