@@ -11,6 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     min-height: 100vh;
+    margin: 0;
 }
 
 /* Bandeau Top */
@@ -212,9 +213,12 @@ footer .copyright-wrapper .copyright {
     top: -2rem;
     left: 0;
     background: #05386B;
-    padding: 5px;
-    color: #F3FFF8;
+    padding: 5px 10px;
     text-transform: uppercase;
+}
+
+.article .category a {
+    color: #F3FFF8;
 }
 
 .article h3 {
@@ -252,4 +256,5 @@ footer .copyright-wrapper .copyright {
 .article .thumbnail {
     overflow: hidden;
     height: 150px;
+    margin-top: 15px;
 }
