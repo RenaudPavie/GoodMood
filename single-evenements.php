@@ -12,13 +12,12 @@
           <div class="banner__content">
             <div class="container">
               <div class="row">
-                <div class="col-6 eventImg">
+                <div class="col-12 col-sm-6 eventImg">
                 <?php the_post_thumbnail() ?>          
                 </div>
-                <div class="col-6 eventInfo">
+                <div class="col-12 col-sm-6 eventInfo">
                   <h1 class="singleEventTitle"><?php the_title() ?></h1>
                   <!-- <p>Publié le <?php the_date() ?> par <?php the_author() ?></p> -->
-
 
                   <!-- On affiche les taxonomies gràce à la fonction the_terms() -->
                   <a href="#">VENDREDI 17 JANVIER 2020</a> - <a href="#">20h00</a> <br>
