@@ -530,3 +530,57 @@ footer .copyright-wrapper .copyright {
 .single.container figure.wp-block-image {
     text-align: center;
 }
+
+
+/* CONTACT */
+.formContact {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;  */
+    background-color: rgba(92,219,149,0.2);
+ }
+ .formContact form {
+    padding:15px 15px 0 15px;
+ }
+.bgContact img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:center;
+}
+.row.contact {
+    margin-bottom: 30px;
+}
+.formContact input, .formContact textarea{
+    width: 100%;
+}
+#btnSubmitContact {
+    background-color: var(--c2);
+    border:none;
+    border-radius: 25px;
+    color:#fff;
+    padding:5px 20px;
+}
+.formContact label {
+    color: var(--c2);
+    margin-bottom: 0;
+}
+.formContact input,.formContact textarea {
+    color: var(--c2);
+    border: none;
+    border-bottom: 1px solid var(--c5);
+    background: transparent;
+}
+.formContact input {
+    margin-bottom: 15px;
+}
+.formContact input:focus,.formContact textarea:focus {
+    outline-color: var(--c2);
+}
+#btnSubmitContact {
+    margin: auto;
+    margin-top: 30px;
+}
+#btnSubmitContact:focus {
+    outline:none;
+}
