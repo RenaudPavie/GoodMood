@@ -3,13 +3,6 @@
       <div>
         
       </div>
-      <!-- Banner -->
-      <div class="banner">
-        <div class="banner__content">
-          <h1>DÉCOUVREZ NOS DERNIERS ARTICLES</h1>
-        </div>
-      </div>
-
       <!-- Container page -->
       <div class="container-page container">
         <div class="row">

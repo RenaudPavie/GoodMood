@@ -33,11 +33,11 @@
           </div>
         </div>
         <nav class="navMenu">
-          <a href="<?php bloginfo('url') ?>" class="logo">
+          <a href="<?php bloginfo('url') ?>/accueil" class="logo">
               <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/logo.svg" alt="Logo GoodMood">
           </a>
           <div class="navLink">
-            <a href="#" class="logoSidebar">
+            <a href="<?php bloginfo('url') ?>/accueil" class="logoSidebar">
                 <img src="<?php bloginfo("stylesheet_directory") ?>/assets/img/logo.svg" alt="Logo GoodMood">
             </a>
             <button type="button" id="closeMenu">
