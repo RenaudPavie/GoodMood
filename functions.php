@@ -128,7 +128,7 @@ function wpm_custom_post_type() {
 		'hierarchical'        => false,
 		'public'              => true,
 		'has_archive'         => true,
-        'rewrite'			  => array( 'slug' => 'series-tv'),
+        'rewrite'			  => array( 'slug' => 'evenements'),
         'menu_icon'           => 'dashicons-calendar-alt',
 
 	);
